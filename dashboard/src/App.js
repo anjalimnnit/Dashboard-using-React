@@ -4,13 +4,14 @@ import './App.css';
 import { Layout } from 'antd';
 import Siderclass from './components/Siderclass';
 import HeaderClass from './components/HeaderClass';
+import LoginBox from './login/render';
 const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
-    <div className="App">
-      
+    <div >
+    
       <Layout>
-      <Header style={{color:'pink'}}> 
+      <Header> 
         <HeaderClass/>
       </Header>
       
@@ -19,8 +20,8 @@ function App() {
         <Siderclass align={'left'}/>
       </Sider>
         <Layout>
-        <Content style={{ padding: '0 50px', minHeight: 500}}>Content</Content>
-        <Footer>Footer</Footer>
+        <Content style={{ padding: '0 50px', minHeight: 700}}><LoginBox/></Content>
+        <Footer></Footer>
       </Layout>
       </Layout>
       </Layout>
